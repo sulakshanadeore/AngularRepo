@@ -1,0 +1,13 @@
+<p>students works!</p>
+
+<label for="studentid">Enter Rollno:</label>
+<input type="number" name="studentid" id="studentid" [value]="rollno" >
+<br/>
+<label for="studentname">Enter StudentName:</label>
+<input type="text" name="studentname" id="studentname" [value]="name" >
+<br/>
+
+<button (click)="WhenClicked()">click here</button> <input type="number" name="" id="" [value]="numberofTimesClicked">
+<p>Button clicked:   {{numberofTimesClicked}}</p>
+<button ![disabled]="isAttentive">{{name}} is Attentive  </button>
+<!-- disabled is property/attribute of button -->
