@@ -1,0 +1,49 @@
+Nodejs: Javascript runtime environment, used for executing JS outside the browser
+It is for server side development, non blocking IO and Asynchronous
+It is buitl on V8 JavaScript Engine of Google Chrome, which compiles Javascript code into native
+machine code for high performance and speed.
+NPM is used for package installations.
+
+
+Typescript+NodeJS+Angular====> fast development
+
+Angular: is a  powerful typescript based, open source (Javascript) framework and developed and maintained 
+by Google for creating SPA(Single Page Application) and apps for mobile/desktop.
+
+Efficiently use angular---- Angular CLI(Command Line Interface)---->quickly scaffolding(auto generating code),building,testing and deploying
+apps.
+
+
+zone.js---> library that angular traditionally use to automatically detect when the app state had changed after an async operation(user event,time or http request).
+
+
+Folder Structure
+A)src folder: application source files
+B)root level: workspace configuration files
+
+
+A)SRC Level
+1)index.html: basic html page served to the browser. The CLI automatically injects all necessary JS and CSS bundles into the file at the build(compile) time
+2)main.ts
+3)styles.css
+4)favicon.ico
+5)assets/
+6)app/: Core Logic
+	app.component.ts
+	app.component.html
+	app.component.css
+	app.component.spec.ts
+7) environments/: environment.ts for developement and environment.prod.ts for production
+8)tsconfig.app.json is for TS Configuration and tsconfig.spec.json: for tests
+
+
+
+B)Root Level:
+ 1) .editorconfig:code formatting for different editors
+2).gitignore:folders and files that should be ignored by git(node_modules/,dist/,.angular/cache)
+3)angular.json: the main cli configuration fole for all projects in the workspace,defining build,serve and test options
+4)package.json:configures npm package depenendencies and available scripts for entire workspace.
+5)package-lock.json: Exact version info for all installed packages to ensure consistent installs across environments
+6)tsconfig.jon: the typescript configuration file
+7)README.md:Documentation file for the project
+
