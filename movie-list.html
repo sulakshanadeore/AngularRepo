@@ -1,0 +1,19 @@
+<h2>Now Showing....</h2>
+
+<div>
+    <ul>
+        <li *ngFor="let m of movies">{{m.moviename}} {{m.price}}</li>
+    </ul>
+</div>
+<hr/>
+ <app-movie-ticket *ngFor="let m of movies"
+         [movie]="m"
+          (book)="bookTicket($event)"></app-movie-ticket>
+
+<h2>Booked Tickets</h2>
+
+<div>
+    <ol>
+        <li *ngFor="let b of bookedMovies">{{b.moviename}}-- {{b.price}}</li>
+    </ol>
+</div>
